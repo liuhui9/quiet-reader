@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'"><title>留白</title><link rel="stylesheet" href="style.css"></head>
+<body class="reader-body">
+<div id="reader"><header class="reader-toolbar"><span class="drag-zone" title="拖动这里移动窗口">⠿</span><button id="library-toggle" aria-controls="library-panel" aria-expanded="false" title="返回书架">返回</button><button id="toc-toggle" aria-controls="toc" aria-expanded="false">目录</button><button id="settings-open">设置</button><button id="reader-close" aria-label="关闭应用" title="关闭应用">×</button><span id="progress">0%</span></header>
+<div id="scroll" tabindex="0" aria-label="小说正文"><article id="content"><div class="welcome"><img class="welcome-symbol" src="icons/book.svg" alt="蓝色书页标识"><h1>留一点空，读几页书。</h1><p>鼠标移入显示，移出隐藏。<br>拖动顶部左侧移动，拖动边缘缩放。</p><div class="welcome-actions"><button id="import">导入 TXT</button><button id="sample">读一段示例</button></div><p id="hotkey-hint"></p></div></article></div>
+<section id="library-panel" class="popover" hidden><div class="panel-heading">本地书架<button id="import-more">＋ 导入</button><button id="library-close" aria-label="关闭书架">×</button></div><div id="library"></div></section>
+<nav id="toc" class="popover" hidden aria-label="章节目录"></nav>
+<div id="toast" role="status" hidden></div>
+<div class="resize n" data-edge="n"></div><div class="resize s" data-edge="s"></div><div class="resize e" data-edge="e"></div><div class="resize w" data-edge="w"></div><div class="resize nw" data-edge="nw"></div><div class="resize ne" data-edge="ne"></div><div class="resize sw" data-edge="sw"></div><div class="resize se" data-edge="se" title="拖动调整窗口大小"></div>
+</div><script src="reader-toolbar.js"></script><script src="app.js"></script></body></html>
+
+
+
+
+

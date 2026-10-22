@@ -1,0 +1,28 @@
+# 可重新安装的依赖
+node_modules/
+
+# Electron 打包产物（包括临时验证版本）
+/release/
+/release-*/
+/dist/
+
+# 测试、缓存及临时验证数据
+/coverage/
+/.nyc_output/
+/.cache/
+/work/
+*.tmp
+*.log
+
+# 本地环境与编辑器配置
+.env
+.env.*
+!.env.example
+!.env.*.example
+.idea/
+.vscode/*.local.json
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+Desktop.ini

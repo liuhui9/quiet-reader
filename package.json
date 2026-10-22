@@ -1,0 +1,48 @@
+{
+  "name": "quiet-reader",
+  "version": "1.1.0",
+  "description": "本地小说阅读器",
+  "main": "main.cjs",
+  "author": "Quiet Reader",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "check": "node --check main.cjs && node --check preload.cjs && node --check app.js && node --check reader-toolbar.js && node --check settings.js && node --check window-state.cjs",
+    "test": "node --test tests/*.test.cjs",
+    "pack": "electron-builder --dir",
+    "dist:win": "electron-builder --win nsis",
+    "dist:mac": "electron-builder --mac dmg"
+  },
+  "devDependencies": {
+    "electron": "45.0.0",
+    "electron-builder": "26.15.3"
+  },
+  "build": {
+    "appId": "local.quietreader.desktop",
+    "productName": "Quiet Reader",
+    "files": [
+      "main.cjs",
+      "preload.cjs",
+      "window-state.cjs",
+      "settings.html",
+      "settings.js",
+      "index.html",
+      "app.js",
+      "reader-toolbar.js",
+      "style.css",
+      "icons/**"
+    ],
+    "directories": {
+      "output": "release"
+    },
+    "win": {
+      "icon": "icons/app.ico",
+      "target": "nsis"
+    },
+    "mac": {
+      "icon": "icons/app.icns",
+      "target": "dmg",
+      "category": "public.app-category.books"
+    }
+  }
+}
